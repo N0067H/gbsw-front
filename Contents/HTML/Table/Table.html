@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1학년 1반 시간표</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        td {
+          border: solid 1px black;  
+          
+        }
+        th {
+            border: solid 1px black;
+            background-color: rgb(191, 237, 255);
+        }
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+        table, tr, td {
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+    <table>
+        <caption>1학년 1반 시간표</caption>
+        <thead>
+            <tr>
+                <th style="background-color: white;"></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>자율</td>
+                <td rowspan="2" style="background-color: yellow;">미술</td>
+                <td>수학</td>
+                <td>사회</td>
+                <td>수학</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>진로</td>
+                <td>국어</td>
+                <td rowspan="2" style="background-color: rgb(201, 255, 121);">
+                    응용<br>
+                    프로그래밍<br>
+                    개발
+                </td>
+                <td>과학</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>영어</td>
+                <td>과학</td>
+                <td>사회</td>
+                <td rowspan="2" style="background-color: rgb(201, 255, 121);">
+                    응용<br>
+                    프로그래밍<br>
+                    개발
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>사회</td>
+                <td>체육</td>
+                <td>체육</td>
+                <td>영어</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>수학</td>
+                <td>국어</td>
+                <td>영어</td>
+                <td rowspan="3" style="background-color: bisque;">
+                    자바<br>
+                    프로그래밍
+                </td>
+                <td>동아리</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>과학</td>
+                <td rowspan="2" style="background-color: bisque;">
+                    자바<br>
+                    프로그래밍
+                </td>
+                <td>응개</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>국어</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
