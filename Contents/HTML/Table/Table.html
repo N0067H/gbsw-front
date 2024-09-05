@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1학년 1반 시간표</title>
 </head>
+
 <body>
     <style>
         body {
@@ -15,25 +17,69 @@
             height: 100vh;
             margin: 0;
         }
+
         td {
-          border: solid 1px black;  
-          
+            border: solid 1px black;
+
         }
+
         th {
             border: solid 1px black;
             background-color: rgb(191, 237, 255);
         }
+
         table {
             border: solid 1px;
             border-collapse: collapse;
         }
-        table, tr, td {
+
+        table,
+        tr,
+        td {
             width: 500px;
             height: 50px;
         }
     </style>
     <table>
+        <caption>과일 선물세트 상품 구성</caption>
+        <thead>
+            <tr>
+                <th> 용도 </th>
+                <th> 중량 </th>
+                <th> 최소개수 </th>
+                <th> 최대개수 </th>
+                <th> 가격 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">선물용</td>
+                <td>3kg</td>
+                <td>11개</td>
+                <td>16개</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18개</td>
+                <td>26개</td>
+                <td>52,000원</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>가정용</td>
+                <td>3kg</td>
+                <td colspan="2">13개</td>
+                <td>30,000원</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
         <caption>1학년 1반 시간표</caption>
+        <colgroup>
+            <col style="background-color: gainsboro;">
+        </colgroup>
         <thead>
             <tr>
                 <th style="background-color: white;"></th>
@@ -112,4 +158,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
