@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Information Panel</title>
+    <style>
+        fieldset {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>주문 및 배송</h1>
+    <form action="/buy" method="post">
+        <fieldset>
+            <legend>주문하기</legend>
+            <h4>주문 할 상품을 선택해주세요</h4>
+            <span>
+                <label><input type="checkbox">과일선물세트</label>
+                <input type="number" value="0" min="0" max="5">
+                <small>(최대 5개)</small>
+            </span>
+            <br>
+            <span>
+                <label><input type="checkbox">홍삼선물세트</label>
+                <input type="number" value="0" step="2" min="0" max="10">
+                <small>(2개 1세트, 최대 10개)</small>
+            </span>
+            
+            <h4>주문 할 상품을 선택해주세요</h4>
+            <label><input type="radio" name="pack">리본 포장</label>
+            <label><input type="radio" name="pack">리본 포장 안 함</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label>이름
+                        <input type="text"
+                               placeholder="공백 없이 입력하세요"
+                               onfocus="this.placeholder=''"
+                               onblur="this.placeholder='공백 없이 입력하세요'"
+                               pattern="^\S+$">
+                    </label>
+                </li>
+                <li>
+                    <label>연락처
+                        <input type="tel"
+                               placeholder="- 없이 입력하세요"
+                               onfocus="this.placeholder=''"
+                               onblur="this.placeholder='- 없이 입력하세요'"
+                               pattern="^[^-]+$">
+                    </label>
+                </li>
+                <li>
+                    <label>이메일
+                        <input type="text">
+                        @
+                        <select>
+                            <option value="1">gbsw.com</option>
+                            <option value="2">gmail.com</option>
+                            <option value="1">naver.com</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>박스 디자인 이미지
+                        <input type="file">
+                    </label>
+                </li>
+                <li>
+                    <label>희망 배송일
+                        <input type="date"
+                               min="2024-09-01"
+                               max="2024-09-10">
+                    </label>
+                </li>
+                <li>
+                    <label>배송 메세지<br>
+                        <textarea maxlength="50" rows="3"></textarea>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <input type="submit" value="제출하기">
+        <input type="reset" value="다시 작성">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Examples</title>
+</head>
+
+<body>
+    <h1>주문하기</h1>
+    <form action="/order" method="post">
+        <fieldset>
+            <legend>주문자 정보</legend>
+            <label for="namebox">이름</label>
+            <input type="text" id="namebox">
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <label for="addrbox">주소</label>
+            <input type="text" id="addrbox">
+        </fieldset>
+        <label for="textexam">TextBox</label>
+        <input type="text" id="textexam">
+        <br>
+        <button type="submit">제출</button>
+    </form>
+</body>
+
+</html>
