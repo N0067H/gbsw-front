@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>BoxModel Example</title>
+    <style>
+        fieldset {
+            margin: 10px auto;
+            margin-bottom: 10px;
+            border-color: black;
+            width: 300px;
+        }
+
+        .submit {
+            border-color: black;
+            border-style: dashed;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <h3>사용자 정보</h3>
+            <label for="username">이름</label>
+            <input type="text" name="username" required>
+            <br>
+            <label for="password">비밀번호</label>
+            <input type="password" name="password" required>
+        </fieldset>
+        <fieldset>
+            <h3>상품 선택</h3>
+            <input type="radio">노트북
+            <input type="radio">이어폰
+            <h3>수량 선택</h3>
+            <label for="itemCount">선택한 상품 수량</label>
+            <input type="number" name="itemCount" required>
+        </fieldset>
+        <fieldset class="submit">
+            <button type="reset">다시 작성</button>
+            <button type="submit">제출</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
