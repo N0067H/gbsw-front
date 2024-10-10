@@ -31,6 +31,5 @@
 
 > 세로로 배치된 요소의 margin 값이 겹칠 경우 더 큰 margin 값으로 적용된다. 이를 **margin 중첩 현상**이라고 한다.
 
-
-
-
+# 예제
+[./BoxModel.html](./BoxModel.html)
