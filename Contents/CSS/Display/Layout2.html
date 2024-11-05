@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0 auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 100px;
+        }
+
+        .header {
+            background-color: green;
+            width: 500px;
+        }
+
+        .nav {
+            background-color: greenyellow;
+            width: 500px;
+        }
+
+        .pair {
+            width: 500px;
+        }
+
+        .side {
+            background-color: yellow;
+            float: left;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contents {
+            background-color: yellowgreen;
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+
+        .content:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .footer {
+            background-color: mediumspringgreen;
+            clear: both;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">HEADER</div>
+    <div class="nav">NAV</div>
+    <div class="pair">
+        <div class="side">SIDE</div>
+        <div class="contents">
+            <div class="content">Content1</div>
+            <div class="content">Content2</div>
+            <div class="content">Content3</div>
+        </div>
+    </div>
+    <div class="footer">FOOTER</div>
+</body>
+
+</html>
