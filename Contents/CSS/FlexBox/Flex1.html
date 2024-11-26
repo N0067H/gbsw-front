@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .space-between {
+            justify-content: space-between;
+        }
+        .column {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .center {
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin-top: 20px;
+        }
+        .box {
+            padding: 20px;
+        }
+        .margin-bottom {
+            margin-bottom: 10px;
+        }
+        .margin-right {
+            margin-right: 10px;
+        }
+        .lightcoral {
+            background-color: lightcoral;
+        }
+        .lightblue {
+            background-color: lightblue;
+        }
+        .lightgreen {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container space-between">
+        <div class="box lightcoral">Box 1</div>
+        <div class="box lightblue">Box 2</div>
+        <div class="box lightgreen">Box 3</div>
+    </div>
+    <div class="flex-container column">
+        <div class="box lightcoral margin-bottom">Column 1</div>
+        <div class="box lightblue margin-bottom">Column 2</div>
+        <div class="box lightgreen">Column 3</div>
+    </div>
+    <div class="flex-container center">
+        <div class="box lightcoral margin-right">Centered 1</div>
+        <div class="box lightblue margin-right">Centered 2</div>
+        <div class="box lightgreen">Centered 3</div>
+    </div>
+</body>
+</html>
